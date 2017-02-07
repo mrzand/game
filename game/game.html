@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>rr</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animate.css">
+    <link type="text/css" rel="stylesheet" href="sheet.css">
+</head>
+
+<body>
+    <audio autoplay id="startRevolver">
+        <source src="media/start.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audio">
+        <source src="media/miss.mp3" type="audio/mpeg">
+    </audio>
+    <video poster="media/lose.jpg" id="videoShoot">
+        <source src="media/lose.webm" type="video/webm">
+    </video>
+    <div class="loser animated zoomIn" id="loser" style="display: none;">
+        <h1>YOU LOSE !!!</h1>
+    </div>
+    <div class="back animated fadeIn" id="back">
+        <button onclick="shooting()" id="shootingButton">S H O O T</button>
+    </div>
+    <div class="buttonPanel animated fadeIn" id="buttonPanel" style="display: none;">
+        <button id="menuButton"><a href="index.html">MENU</a></button>
+        <button id="resetButton" onclick='location.reload();'>RESET</button>
+    </div>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
